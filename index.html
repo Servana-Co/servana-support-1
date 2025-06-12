@@ -1,49 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Official support page for Servanaa. Contact us for assistance, explore FAQs, or submit a support request." />
-  <title>Servanaa Support 🎯</title>
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #f0f4f8;
-      color: #2c3e50;
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    header {
-      text-align: center;
-      padding: 40px 20px;
-      animation: fadeIn 1s ease-out;
-    }
-    header img {
-      height: 80px;
-      margin-bottom: 20px;
-      animation: bounce 2s infinite;
-    }
-    h1 { font-size: 2.8em; margin: 0; }
-    p.lead { font-size: 1.2em; color: #555; }
-    section {
-      background: #fff;
-      border-radius: 12px;
-      margin: 30px 0;
-      padding: 25px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      transition: transform 0.3s ease;
-    }
-    section:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-    }
-    h2 {
-      font-size: 1.8em;
-      margin-bottom: 15px;
-      position: relative;
-    }
-    h2:after {
-      content: '';
-      width: 50px;
-      height
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official support page for Servanaa. Contact us for assistance, explore FAQs, or submit a support request.">
+    <title>Servanaa Support</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #0066cc;
+            --light-bg: #f9f9f9;
+            --white: #fff;
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            background-color: var(--light-bg);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #3a3a66);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        p.subtitle {
+            font-size: 1.2em;
+            opacity: 0.85;
+        }
+        section {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px var(--shadow);
+            transition: transform 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-4px);
+        }
+        h2 {
+            color: var(--primary-color);
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        form {
+            display: grid;
+            gap: 15px;
+        }
+        input, textarea {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1em;
+        }
+        button {
+            padding: 12px;
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background-color: #004b99;
+        }
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #ececec;
+            font-size: 0.95em;
+            color: #666;
+        }
+        .img-banner {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Servanaa Support</h1>
+        <p class="subtitle">Your trusted partner for seamless assistance with Servanaa services.</p>
+    </header>
+
+    <main>
+        <section class="contact-methods">
+            <h2>Contact Us</h2>
+            <img src="https://source.unsplash.com/1000x300/?customer-service,helpdesk" alt="Support Banner" class="img-banner">
+            <p>We’re here to help! Reach out to our support team through any of the following methods:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:support@servanaa.com">support@servanaa.com</a></li>
+                <li><strong>Phone:</strong> +20 106 813 2164 (Available Sunday–Thursday, 9:00 AM–5:00 PM EEST)</li>
+                <li><strong>Live Chat:</strong> Available through our <a href="#">website</a> during business hours</li>
+                <li><strong>Support Portal:</strong> Submit a ticket below or check your ticket status</li>
+            </ul>
+        </section>
+
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <ul>
+                <li><strong>How do I reset my password?</strong><br>Visit the <a href="#">password reset page</a> and follow the instructions.</li>
+                <li><strong>How can I update my account info?</strong><br>Log in and go to "Account Settings" to update your info.</li>
+                <li><strong>What should I do if I encounter a technical issue?</strong><br>Clear your browser cache or restart the app. If it persists, contact us with details.</li>
+                <li><strong>How do I manage notifications?</strong><br>In your account's "Preferences" or your phone's app settings.</li>
+                <li><strong>Is my data secure?</strong><br>Yes. Check our <a href="https://hazemrnd.github.io/privacy-policy/" target="_blank">Privacy Policy</a> for more.</li>
+            </ul>
+        </section>
+
+        <section class="support-form">
+            <h2>Submit a Support Request</h2>
+            <form action="#" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Describe Your Issue:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Servanaa. All rights reserved. <a href="https://hazemrnd.github.io/privacy-policy/" target="_blank">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
